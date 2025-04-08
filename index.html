@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lojas Tec</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Lojas Tec" />
+                <span>Lojas Tec</span>
+            </div>
+    
+            <!-- Botão hambúrguer -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+            <!-- Menu de navegação -->
+            <nav class="menu">
+                <a href="#home">Home</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contatos">Contatos</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="secao-principal">
+        <h1>Deixe seu dia mais Tec!</h1>
+        <p>Onde a tecnologia vai até você!</p>
+    </section>
+
+    <section id="produtos" class="secao-produtos">
+        <h2>Produtos</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="img/notbook.jpg" alt="Notebook" />
+                <h3>Notebook</h3>
+                <a href="https://stellar-travesseiro-aa79b6.netlify.app/">Ver mais</a>
+            </div>
+            <div class="produto">
+                <img src="img/massageador.jpg" alt="Massageador" />
+                <h3>Massageador</h3>
+                <a href="https://strong-croquembouche-57cd9e.netlify.app/">Ver mais</a>
+            </div>
+            <div class="produto">
+                <img src="img/ar condicionado.jpg" alt="Ar Condicionado" />
+                <h3>Ar Condicionado Smart</h3>
+                <a href="https://astonishing-raindrop-412a1b.netlify.app/">Ver mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="secao-contato">
+        <h2>Contatos</h2>
+        <p>📞 (35) 99944-0354</p>
+        <p>📞 (35) 99727-7668</p>
+        <p>📞 (35) 99966-6805</p>
+    </section>
+
+    <footer>
+        <p>Feito por Adonay, Raquel e Dyandra</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+
+
+</body>
+</html>
