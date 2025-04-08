@@ -2,17 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, gray, #949393);
     color: #ffffff;
-}
-
-/* Header */
-header {
+  }
+  
+  /* Header */
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,10 +21,12 @@ header {
     background-color: #0a0a23;
     font-size: 20px;
     font-weight: bold;
-}
-
-#product-specs {
-    width: 500px;
+    text-align: center;
+  }
+  
+  #product-specs {
+    width: 100%;
+    max-width: 500px;
     margin: 15px auto;
     display: flex;
     flex-direction: column;
@@ -36,45 +37,99 @@ header {
     border: #ccc solid 2px;
     border-radius: 10px;
     background-color: #0a0a23;
-
-}
-
-
-#product-specs h2,
-p {
+  }
+  
+  #product-specs h2,
+  p {
     display: flex;
     justify-content: center;
     font-size: larger;
-
-}
-
-#product-specs img {
-    width: 200px;
+  }
+  
+  #product-specs img {
+    width: 100%;
+    max-width: 250px;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
-}
-
-
-#product-description {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
+  }
+  
+  #product-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     gap: 10px;
     border: #ccc solid 2px;
     border-radius: 10px;
     background-color: #0a0a23;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 15px auto;
     text-align: center;
-
-
-
-}
-
-
-#product-description ul {
+  }
+  
+  #product-description h2,
+  #product-description h3 {
+    font-size: 20px;
+  }
+  
+  #product-description ul {
     list-style-type: none;
-}
+  }
+  
+  #product-description li {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  #product-description li strong {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  footer {
+    display: block;
+    text-align: center;
+    align-items: center;
+    border: #ccc solid 2px;
+    border-radius: 10px;
+    background-color: #0a0a23;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  
+  /* ===== Responsividade para telas pequenas ===== */
+  @media (max-width: 600px) {
+    header {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    #product-specs,
+    #product-description {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    #product-specs img {
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    #product-description {
+      text-align: left;
+    }
+  
+    #product-description ul {
+      padding: 0 10px;
+    }
+  
+    footer {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
