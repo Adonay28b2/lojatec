@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #272323, #949393);
+    background: linear-gradient(to bottom, gray, #949393);
     color: #000000;
 }
 
